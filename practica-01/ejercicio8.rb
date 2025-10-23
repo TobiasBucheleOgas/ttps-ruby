@@ -1,14 +1,5 @@
-def contar_palabras_archivo(nombre_archivo)
-  contenido = File.read(nombre_archivo)
-  palabras = texto.downcase.scan(/\w+/)
-  conteo = Hash.new(0)
-
-  palabras.each do |palabras|
-    conteo[palabras] += 1
-  end
-
-  conteo
+def contar_palabras(texto, palabra)
+  texto.downcase.scan(/\b#{Regexp.escape(palabra.downcase)}\b/).count
 end
 
-resultado = contar_palabras_archivo("texto.txt")
-puts resultado
+puts contar_palabras("La casa de la esquina tiene la puerta roja y la ventana verde", "la")

@@ -1,14 +1,5 @@
-def contar_palabras(texto)
-  palabras = texto.downcase.scan(/\w+/)
-  conteo = Hash.new(0)
-
-  palabras.each do |palabras|
-    conteo[palabras] += 1
-  end
-
-  conteo
+def contar_palabras(texto, palabra)
+  texto.downcase.scan(palabra.downcase).count
 end
 
-texto = "Prueba prueba de la funcion contar contar palabras"
-resultado = contar_palabras(texto)
-puts resultado
+puts contar_palabras("La casa de la esquina tiene la puerta roja y la ventana verde", "la")
