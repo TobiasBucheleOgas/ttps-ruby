@@ -1,0 +1,2 @@
+Se tiene un arreglo de simbolos, .map sirve para recorrer el arreglo y send aplica cada metodo al string que se recibe
+Basicamente se le aplica los metodos del arreglo al string
