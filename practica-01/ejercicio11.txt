@@ -1,0 +1,4 @@
+Ambos métodos permiten invocar metodos dinamicamente usando el nombre del metodo como
+simbolo o string, la diferencia es que el send permite invocar a metodos privados y protegidos
+mientras que public_ no. Por eso send se usa cuando se quiere invocar metodos privados y protegidos
+, ademas de que public_ retorna un error en caso de que el metodo sea privado
