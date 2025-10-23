@@ -1,0 +1,6 @@
+.ancestors te permite conocer a todas las superclases de una clase
+.methods te permite conocer todos los metodos de una clase
+.instance_methods sirve para conocer los metodos de instancia de una clase
+.instance_variables sirve para conocer las variables de instancia de una clase
+.instance_variable.get(:@nombre) sirve para obtener el valor de una variable de instancia desde afuera
+.instance_variable.set(:@nombre, "nuevonombre") sirve para setear el valor de una variable de instancia desde afuera 
